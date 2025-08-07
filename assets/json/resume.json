@@ -1,0 +1,109 @@
+{
+  "basics": {
+    "name": "Jordan (Jordie) Michael Skarajew",
+    "label": "Undergraduate Mathematics Student",
+    "email": "jordie.skarajew@gmail.com",
+    "url": "https://jordieskarajew.github.io/",
+    "summary": "Pure Mathematics student at the University of Melbourne, with interests in stochastic processes, financial modelling, and mathematical optimisation."
+  },
+  "education": [
+    {
+      "institution": "The University of Melbourne",
+      "location": "Melbourne, Australia",
+      "area": "Pure Mathematics specialisation",
+      "studyType": "BSc Mathematics and Statistics",
+      "startDate": "2023",
+      "endDate": "2026",
+      "score": ""
+    },
+    {
+      "institution": "The University of Melbourne",
+      "location": "Melbourne, Australia",
+      "area": "Mathematics / Environmental Sciences",
+      "studyType": "Diploma in General Studies",
+      "startDate": "2022",
+      "endDate": "2022",
+      "score": ""
+    }
+  ],
+  "work": [
+    {
+      "name": "ONCALL Group Australia",
+      "position": "Accounts Officer",
+      "startDate": "2023-02",
+      "endDate": "2024-06",
+      "summary": "NDIS Plan Manager for 120+ VIC/QLD participants.",
+      "highlights": [
+        "Implemented AP automation strategies through Microsoft Power Automate using OCR.",
+        "Aided in the unification of financial data & processes between VIC, QLD & SA teams."
+      ]
+    },
+    {
+      "name": "ONCALL Group Australia",
+      "position": "Customer Support Specialist",
+      "startDate": "2022-11",
+      "endDate": "2023-02",
+      "summary": "Customer Support & Office Administration",
+      "highlights": [
+        "Responded to and actioned 300+ phone calls daily, liaising between all teams across states.",
+        "Maintained, recorded and updated data for head office."
+      ]
+    },
+    {
+      "name": "Coles Group",
+      "position": "IT Technician",
+      "startDate": "2019-06",
+      "endDate": "2020-04",
+      "summary": "Hardware/Software Technician across the Coles Group",
+      "highlights": ["Consistently ranked first in team for client satisfaction whilst solving queries in half the time of specified KPIs."]
+    },
+    {
+      "name": "Australian Fresh Leaf Herb",
+      "position": "Logistician",
+      "startDate": "2018-11",
+      "endDate": "2019-06",
+      "summary": "Logistical analyst of product/staff workflows",
+      "highlights": [
+        "Analysed and optimised staff workflow in preparation of Coles herb sleeves, saving >50% in preparation time.",
+        "Assisted in preparation of leaf and herb supply for most Coles Group supermarkets across VIC, NSW, QLD & TAS."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Mathematics",
+      "level": "Advanced",
+      "keywords": ["Probability Theory", "Stochastic Processes", "Linear Algebra", "Optimisation Theory", "Time Series Analysis"]
+    },
+    {
+      "name": "Programming",
+      "level": "Intermediate",
+      "keywords": ["Python", "R", "MATLAB", "Pandas", "NumPy", "Matplotlib"]
+    },
+    {
+      "name": "Finance & Modelling",
+      "level": "Intermediate",
+      "keywords": ["Financial Modelling", "Monte Carlo Simulation", "Portfolio Theory", "Black-Scholes"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Conversational"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Music",
+      "keywords": ["Orchestral/Choral Conducting", "Jazz"]
+    },
+    {
+      "name": "Fitness",
+      "keywords": ["Endurance Running", "Basketball"]
+    }
+  ]
+}
