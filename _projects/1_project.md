@@ -2,7 +2,7 @@
 layout: page
 title: The Riemannian Geometry of Financial Correlation
 description: Research paper on affine-invariant geometry of financial correlation matrices for systemic stress detection.
-img: assets/img/project-placeholder.jpg
+img: assets/img/Heatmap_Figure.png
 importance: 1
 category: work
 ---
