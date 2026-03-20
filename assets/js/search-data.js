@@ -456,11 +456,6 @@ ninja.data = [{
           description: "Research paper on affine-invariant geometry of financial correlation matrices for systemic stress detection.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{
         id: 'social-email',
         title: 'email',
