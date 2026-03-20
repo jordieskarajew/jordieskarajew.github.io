@@ -10,4 +10,4 @@ This project presents my paper on whether affine-invariant Riemannian geometry o
 
 The paper develops the geometric framework, explains the distinction between ambient and intrinsic distances on correlation matrices, and tests the method empirically on financial market data.
 
-[Read the full paper here](/assets/pdf/riemannian-geometry-financial-correlation.pdf)
+[Read the full paper here](/assets/pdf/Riemannian%20Geometry%20of%20Financial%20Correlation.pdf)
