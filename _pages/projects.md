@@ -121,8 +121,8 @@ horizontal: false
 
   .projects-hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
-    gap: clamp(2.5rem, 5vw, 5rem);
+    grid-template-columns: minmax(0, 0.85fr) minmax(620px, 1.15fr);
+    gap: clamp(2rem, 4vw, 4rem);
     align-items: start;
   }
 
@@ -222,7 +222,7 @@ horizontal: false
   }
 
   .projects-visual {
-    width: min(100%, 650px);
+    width: min(100%, 900px);
     justify-self: center;
     border-radius: var(--projects-radius);
     overflow: hidden;
@@ -230,16 +230,14 @@ horizontal: false
     box-shadow:
       0 1px 2px rgba(0, 0, 0, 0.04),
       0 10px 40px -12px rgba(0, 0, 0, 0.18);
-    aspect-ratio: 2048 / 866;
     position: relative;
   }
 
   .projects-visual img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
   }
-
   .projects-empty-state {
     text-align: center;
     padding-block: clamp(3rem, 8vw, 6rem);
