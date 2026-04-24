@@ -11,7 +11,7 @@ horizontal: false
 
 <!-- pages/projects.md -->
 
-{% assign project_image = "/assets/img/Heatmap.png" | relative_url %}
+{% assign project_image = "/assets/img/Heatmap_Figure.png" | relative_url %}
 {% assign paper_pdf = "/assets/pdf/Riemannian-Geometry-Financial-Correlation.pdf" | relative_url %}
 {% assign code_url = "https://github.com/jordieskarajew" %}
 
