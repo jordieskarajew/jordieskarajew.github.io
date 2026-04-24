@@ -16,6 +16,11 @@ horizontal: false
 {% assign code_url = "https://github.com/jordieskarajew" %}
 
 <style>
+  /* Hide the default al-folio page title on this page only */
+  .post-header {
+    display: none;
+  }
+
   .projects-custom {
     width: min(1500px, calc(100vw - 3rem));
     margin-left: 50%;
@@ -35,7 +40,7 @@ horizontal: false
 
     color: var(--projects-text);
     background: var(--projects-bg);
-    margin-top: 1.25rem;
+    margin-top: 0;
   }
 
   .projects-custom *,
@@ -66,7 +71,7 @@ horizontal: false
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2.75rem;
+    margin-bottom: 2.25rem;
   }
 
   .projects-tabs {
@@ -111,7 +116,7 @@ horizontal: false
   }
 
   .projects-hero {
-    padding-block: clamp(0.5rem, 2vw, 1.5rem) clamp(2rem, 5vw, 3.5rem);
+    padding-block: 0 clamp(2rem, 5vw, 3.5rem);
   }
 
   .projects-hero-grid {
@@ -267,7 +272,7 @@ horizontal: false
   @media (max-width: 768px) {
     .projects-custom {
       width: min(100%, calc(100vw - 1.5rem));
-      margin-top: 1rem;
+      margin-top: 0;
     }
 
     .projects-top-row {
