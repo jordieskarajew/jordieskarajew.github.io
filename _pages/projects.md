@@ -12,7 +12,7 @@ horizontal: false
 <!-- pages/projects.md -->
 
 {% assign project_image = "/assets/img/Geodesic.png" | relative_url %}
-{% assign paper_pdf = "/assets/pdf/Riemannian%20Geometry%20of%20Financial%20Correlation.pdf" | relative_url %}
+{% assign paper_pdf = "/assets/pdf/Riemannian-Geometry-Financial-Correlation.pdf" | relative_url %}
 {% assign code_url = "https://github.com/jordieskarajew" %}
 
 <style>
@@ -472,23 +472,7 @@ horizontal: false
               Research Paper
             </span>
 
-            <span class="projects-meta-item">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden="true"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/>
-              </svg>
-              Financial Geometry
-            </span>
+            
           </div>
         </div>
 
