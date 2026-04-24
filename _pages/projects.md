@@ -17,6 +17,10 @@ horizontal: false
 
 <style>
   .projects-custom {
+    width: min(1500px, calc(100vw - 3rem));
+    margin-left: 50%;
+    transform: translateX(-50%);
+
     --projects-bg: var(--global-bg-color, #ffffff);
     --projects-card-bg: var(--global-card-bg-color, #ffffff);
     --projects-text: var(--global-text-color, #0a0a0a);
@@ -53,19 +57,21 @@ horizontal: false
   }
 
   .projects-custom__inner {
-    max-width: 1200px;
+    max-width: none;
     margin-inline: auto;
-    padding-inline: clamp(0.25rem, 2vw, 1.5rem);
+    padding-inline: clamp(0.5rem, 2vw, 2rem);
   }
 
   .projects-tabs-wrap {
-    padding-block: clamp(0.75rem, 3vw, 1.75rem) clamp(1.5rem, 4vw, 2.5rem);
+    margin-top: -4.25rem;
+    margin-bottom: 2.5rem;
+    padding-block: 0;
   }
 
   .projects-tabs {
     display: flex;
     gap: 0.75rem;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
 
@@ -109,8 +115,8 @@ horizontal: false
 
   .projects-hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
-    gap: clamp(2rem, 5vw, 4rem);
+    grid-template-columns: minmax(420px, 0.95fr) minmax(520px, 1.25fr);
+    gap: clamp(2.5rem, 5vw, 5rem);
     align-items: start;
   }
 
@@ -244,9 +250,25 @@ horizontal: false
     margin: 0;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     .projects-hero-grid {
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .projects-custom {
+      width: min(100%, calc(100vw - 1.5rem));
+      margin-top: 1rem;
+    }
+
+    .projects-tabs-wrap {
+      margin-top: 0;
+      margin-bottom: 1.75rem;
+    }
+
+    .projects-tabs {
+      justify-content: flex-start;
     }
   }
 
@@ -260,6 +282,7 @@ horizontal: false
         opacity: 0;
         transform: translateY(6px);
       }
+
       to {
         opacity: 1;
         transform: none;
@@ -272,10 +295,21 @@ horizontal: false
       animation: projects-reveal 0.6s cubic-bezier(0.2, 0.6, 0.2, 1) forwards;
     }
 
-    .projects-reveal-1 { animation-delay: 0.05s; }
-    .projects-reveal-2 { animation-delay: 0.12s; }
-    .projects-reveal-3 { animation-delay: 0.19s; }
-    .projects-reveal-4 { animation-delay: 0.26s; }
+    .projects-reveal-1 {
+      animation-delay: 0.05s;
+    }
+
+    .projects-reveal-2 {
+      animation-delay: 0.12s;
+    }
+
+    .projects-reveal-3 {
+      animation-delay: 0.19s;
+    }
+
+    .projects-reveal-4 {
+      animation-delay: 0.26s;
+    }
 
     @keyframes projects-reveal {
       to {
@@ -347,7 +381,17 @@ horizontal: false
 
           <div class="projects-actions projects-reveal projects-reveal-4">
             <a class="projects-btn projects-btn-primary" href="{{ paper_pdf }}">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                 <polyline points="14 2 14 8 20 8"/>
               </svg>
@@ -355,7 +399,17 @@ horizontal: false
             </a>
 
             <a class="projects-btn projects-btn-outline" href="{{ code_url }}">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <polyline points="16 18 22 12 16 6"/>
                 <polyline points="8 6 2 12 8 18"/>
               </svg>
@@ -365,7 +419,17 @@ horizontal: false
 
           <div class="projects-meta projects-reveal projects-reveal-4">
             <span class="projects-meta-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <rect width="18" height="18" x="3" y="4" rx="2"/>
                 <path d="M16 2v4M8 2v4M3 10h18"/>
               </svg>
@@ -373,7 +437,17 @@ horizontal: false
             </span>
 
             <span class="projects-meta-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                 <polyline points="14 2 14 8 20 8"/>
               </svg>
@@ -381,7 +455,17 @@ horizontal: false
             </span>
 
             <span class="projects-meta-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
                 <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/>
               </svg>
