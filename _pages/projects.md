@@ -121,7 +121,7 @@ horizontal: false
 
   .projects-hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 0.85fr) minmax(620px, 1.15fr);
+    grid-template-columns: minmax(0, 1fr) minmax(520px, 1fr);
     gap: clamp(2rem, 4vw, 4rem);
     align-items: start;
   }
