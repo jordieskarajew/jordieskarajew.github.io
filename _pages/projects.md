@@ -222,22 +222,22 @@ horizontal: false
   }
 
   .projects-visual {
-    width: min(100%, 576px);
+    width: min(100%, 650px);
     justify-self: center;
     border-radius: var(--projects-radius);
     overflow: hidden;
-    background: #0a0a0a;
+    background: #ffffff;
     box-shadow:
       0 1px 2px rgba(0, 0, 0, 0.04),
       0 10px 40px -12px rgba(0, 0, 0, 0.18);
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 2048 / 866;
     position: relative;
   }
 
   .projects-visual img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .projects-empty-state {
