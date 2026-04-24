@@ -35,7 +35,7 @@ horizontal: false
 
     color: var(--projects-text);
     background: var(--projects-bg);
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
   }
 
   .projects-custom *,
@@ -62,16 +62,17 @@ horizontal: false
     padding-inline: clamp(0.5rem, 2vw, 2rem);
   }
 
-  .projects-tabs-wrap {
-    margin-top: -4.25rem;
-    margin-bottom: 2.5rem;
-    padding-block: 0;
+  .projects-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.75rem;
   }
 
   .projects-tabs {
     display: flex;
     gap: 0.75rem;
-    justify-content: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -110,12 +111,12 @@ horizontal: false
   }
 
   .projects-hero {
-    padding-block: clamp(1rem, 3vw, 2rem) clamp(2rem, 5vw, 3.5rem);
+    padding-block: clamp(0.5rem, 2vw, 1.5rem) clamp(2rem, 5vw, 3.5rem);
   }
 
   .projects-hero-grid {
     display: grid;
-    grid-template-columns: minmax(420px, 0.95fr) minmax(520px, 1.25fr);
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
     gap: clamp(2.5rem, 5vw, 5rem);
     align-items: start;
   }
@@ -221,6 +222,8 @@ horizontal: false
   }
 
   .projects-visual {
+    width: min(100%, 480px);
+    justify-self: center;
     border-radius: var(--projects-radius);
     overflow: hidden;
     background: #0a0a0a;
@@ -254,6 +257,11 @@ horizontal: false
     .projects-hero-grid {
       grid-template-columns: 1fr;
     }
+
+    .projects-visual {
+      width: min(100%, 520px);
+      margin-inline: auto;
+    }
   }
 
   @media (max-width: 768px) {
@@ -262,13 +270,18 @@ horizontal: false
       margin-top: 1rem;
     }
 
-    .projects-tabs-wrap {
-      margin-top: 0;
+    .projects-top-row {
+      justify-content: center;
       margin-bottom: 1.75rem;
     }
 
     .projects-tabs {
-      justify-content: flex-start;
+      justify-content: center;
+    }
+
+    .projects-visual {
+      width: min(100%, 420px);
+      margin-inline: auto;
     }
   }
 
@@ -321,8 +334,8 @@ horizontal: false
 </style>
 
 <div class="projects-custom" data-projects-custom>
-  <div class="projects-tabs-wrap">
-    <div class="projects-custom__inner">
+  <div class="projects-custom__inner">
+    <div class="projects-top-row">
       <div class="projects-tabs" role="tablist" aria-label="Projects">
         <button
           class="projects-tab"
