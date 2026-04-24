@@ -227,7 +227,7 @@ horizontal: false
   }
 
   .projects-visual {
-    width: min(100%, 480px);
+    width: min(100%, 576px);
     justify-self: center;
     border-radius: var(--projects-radius);
     overflow: hidden;
@@ -285,7 +285,7 @@ horizontal: false
     }
 
     .projects-visual {
-      width: min(100%, 420px);
+      width: min(100%, 504px);
       margin-inline: auto;
     }
   }
@@ -386,7 +386,7 @@ horizontal: false
           </div>
 
           <h1 class="projects-title projects-reveal projects-reveal-2">
-            The Riemannian Geometry of Financial Correlation Matrices during Periods of Market Stress
+            The Riemannian Geometry of Financial Correlation
           </h1>
 
           <p class="projects-subtitle projects-reveal projects-reveal-3">
