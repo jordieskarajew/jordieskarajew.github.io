@@ -135,11 +135,11 @@ horizontal: false
   }
 
   .projects-title {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: inherit;
+    font-size: 2.5rem;
     font-weight: 400;
-    font-size: clamp(2.1rem, 4.6vw, 3.55rem);
-    line-height: 1.08;
-    letter-spacing: -0.02em;
+    line-height: 1.2;
+    letter-spacing: normal;
     margin: 0 0 1.25rem;
     color: var(--projects-text);
   }
@@ -385,7 +385,7 @@ horizontal: false
             Research Paper
           </div>
 
-          <h1 class="projects-title projects-reveal projects-reveal-2">
+          <h1 class="post-title projects-title projects-reveal projects-reveal-2">
             The Riemannian Geometry of Financial Correlation
           </h1>
 
