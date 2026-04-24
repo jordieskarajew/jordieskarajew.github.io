@@ -134,28 +134,23 @@ horizontal: false
     letter-spacing: 0.005em;
   }
 
+  /* Typography now comes from al-folio's .post-title class */
   .projects-title {
-    font-family: inherit;
-    font-size: 2.5rem;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: normal;
     margin: 0 0 1.25rem;
     color: var(--projects-text);
   }
 
+  /* Typography now comes from al-folio's .desc class */
   .projects-subtitle {
-    font-family: Georgia, "Times New Roman", serif;
-    font-style: italic;
-    font-weight: 300;
-    font-size: clamp(1.05rem, 1.6vw, 1.2rem);
-    color: var(--projects-subtle);
     margin: 0 0 1.75rem;
-    letter-spacing: 0.01em;
+    color: var(--projects-muted);
   }
 
+  /* Body typography now inherits normal al-folio paragraph styling */
   .projects-description {
-    font-size: 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
     color: var(--projects-muted);
     max-width: 44em;
     margin: 0 0 2.25rem;
@@ -389,7 +384,7 @@ horizontal: false
             The Riemannian Geometry of Financial Correlation
           </h1>
 
-          <p class="projects-subtitle projects-reveal projects-reveal-3">
+          <p class="desc projects-subtitle projects-reveal projects-reveal-3">
             Geodesic Distance, Estimation Quality, and the Detection of Systemic Stress
           </p>
 
@@ -471,15 +466,13 @@ horizontal: false
               </svg>
               Research Paper
             </span>
-
-            
           </div>
         </div>
 
         <div class="projects-visual projects-reveal projects-reveal-4">
           <img
             src="{{ project_image }}"
-            alt="Geodesic and Euclidean paths on a curved manifold representing financial correlation matrices"
+            alt="Correlation heatmap for the Riemannian geometry of financial correlation project"
             loading="eager"
           >
         </div>
@@ -497,8 +490,8 @@ horizontal: false
   >
     <div class="projects-custom__inner">
       <div class="projects-empty-state">
-        <h1 class="projects-title">Upcoming Project</h1>
-        <p class="projects-subtitle">Stay tuned.</p>
+        <h1 class="post-title projects-title">Upcoming Project</h1>
+        <p class="desc projects-subtitle">Stay tuned.</p>
       </div>
     </div>
   </section>
